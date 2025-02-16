@@ -58,7 +58,7 @@ while True:
                 best_score = score
                 best_match = name
 
-        if best_match and best_score < 0.:  # Threshold for recognition
+        if best_match and best_score < 0.15:  # Threshold for recognition
             label = f"{best_match} ({best_score:.2f})"
             color = (0, 255, 0)
         else:
